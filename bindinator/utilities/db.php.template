@@ -1,0 +1,10 @@
+<?
+# Bindinator DB Information
+$dsn = array(
+	'phptype'  => 'TYPE',
+	'username' => 'USERNAME',
+	'password' => 'PASSWORD',
+	'hostspec' => 'HOST',
+	'database' => 'dns'
+);
+?>

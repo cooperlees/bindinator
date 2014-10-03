@@ -1,0 +1,32 @@
+; ****************************************************************************
+;
+; Computing Centre domain
+; cc.ansto.gov.au
+;
+$ORIGIN cc.ansto.gov.au.
+$TTL	172800
+;
+@		IN	SOA	atom.ansto.gov.au. hostmaster.ansto.gov.au. (
+;                       yyyymmddcc	 cc is change number for the day
+			2008050101	;serial - date and time used by me 
+			3600		;refresh rate in seconds
+			900		;retry
+			7200000		;expire
+			172800)		;minimum
+;
+; IMPORTANT:
+;	If any of the NS lines immediately below are changed, edit the beginning
+;	file named.hosts.lhrl (the parent domain section) so that the
+;       delegation of this
+;	domain contained therein matches the following NS records exactly.
+;	This includes when NS lines are added or deleted.
+;	Remember to update any glue A records which may also appear there.
+;
+;	This includes when NS lines are added or deleted, as well as when a
+;	servers IP address changes.
+;
+		IN	NS	atom.ansto.gov.au.
+		IN	NS	horus.ansto.gov.au.
+		IN	NS	hadron.ansto.gov.au.
+;
+; ****************************************************************************

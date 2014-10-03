@@ -1,0 +1,556 @@
+; ****************************************************************************
+; ****************************************************************************
+; ****************************************************************************
+;
+; Applications of Nuclear Physics domain
+;	anp.ansto.gov.au
+;
+;$ORIGIN anp.ansto.gov.au.
+;$TTL	172800
+;
+;@		IN	SOA	atom.ansto.gov.au. hostmaster.ansto.gov.au. (
+;                       yyyymmddcc	 cc is change number for the day
+;			2008020700	;serial - date and time used by me 
+;			3600		;refresh rate in seconds
+;			900		;retry
+;			7200000		;expire
+;			172800)		;minimum
+;
+; IMPORTANT:
+;	If any of the NS lines immediately below are changed, edit the beginning
+;	file named.hosts.lhrl (the parent domain section) so that the
+;       delegation of this
+;	domain contained therein matches the following NS records exactly.
+;	This includes when NS lines are added or deleted.
+;	Remember to update any glue A records which may also appear there.
+;
+;	This includes when NS lines are added or deleted, as well as when a
+;	servers IP address changes.
+;
+;		IN	NS	atom.ansto.gov.au.
+;		IN	NS	horus.ansto.gov.au.
+;		IN	NS	hadron.ansto.gov.au.
+;
+; ****************************************************************************
+; ****************************************************************************
+;
+; System Administrators:
+;
+;
+; ****************************************************************************
+; ****************************************************************************
+;
+; Special MX records
+;
+;
+; ****************************************************************************
+; ****************************************************************************
+;
+; ****************************************************************************
+; ****************************************************************************
+;
+b15lsr1-ps	IN	A	137.157.74.180
+		IN	TXT	"B15 Printer"
+;
+b45lsr1-ps	IN	A	137.157.43.199
+		IN	TXT	"Printer Bld 45"
+;
+b5lsr		IN	CNAME	b5lsr.ainse.ansto.gov.au.
+;
+b23lsr2		IN	A	137.157.22.204
+		IN	TXT	"Printer Bld 23 - Connie Banos, Rm 10"
+;
+b53lsr5-ps	IN	A	137.157.48.62
+		IN	TXT	"Printer Bld 53 - Slamen Bouchahine"
+;
+b53lsr6-ps	IN	A	137.157.48.63
+		IN	TXT	"Printer Bld 53 - Slamen Bouchahine"
+;
+b22r15-ps	IN	A	137.157.48.64
+		IN	TXT	"Printer Bld 22 - Slamen Bouchahine"
+;
+b58lsr2-ps	IN	A	137.157.106.26
+		IN	TXT	"Printer Bld 58"
+;
+b58lsr3-ps	IN	A	137.157.106.28
+		IN	TXT	"HP 5000N Printer Bld 58"
+;
+b58lsr4-ps	IN	A	137.157.106.34
+		IN	TXT	"Bld 58"
+;
+b58lsr6-ps	IN	A	137.157.106.29
+		IN	TXT	"A3 LaserJet Printer Bld 58"
+;
+b58lsr7-ps	IN	A	137.157.106.33
+		IN	TXT	"Toshiba E-studio 550 MFP"
+;
+b58r10-ps	IN	A	137.157.106.27
+		IN	TXT	"Imre Hirka - XL300 printer Bld58 R10"
+;
+b58lsr5-ps	IN	A	137.157.106.18
+		IN	TXT	"Imre Hirka"
+;
+b58lsr8-ps	IN	A	137.157.106.31
+		IN	TXT	"HP LaserJet 4250DTN"
+;
+b58lsr9-ps	IN	A	137.157.106.35
+		IN	TXT	"HP Colour LaserJet 3600N"
+;
+b58lsr10-ps	IN      A       137.157.106.36
+		IN      TXT     "HP LaserJet Rm 19"
+;
+;
+;rho		IN	A	137.157.48.3
+;
+spare-48-6	IN	A	137.157.48.7
+spare-48-7	IN	A	137.157.48.8
+spare-48-8	IN	A	137.157.48.9
+;
+;anpnt53		IN	A	137.157.48.10
+;		IN	HINFO	"PC" "MS/DOS"
+;		IN	TXT	"Building 53 NT server - Imre Hirka"
+;
+;lambda          IN      A       137.157.48.11
+;		IN      A       137.157.52.1
+;		IN      HINFO   "Decstation 5000" "Ultrix"
+;
+;delta		IN      A       137.157.48.12
+;		IN      HINFO   "Decstation 5000" "Ultrix"
+;
+;gamma           IN      A       137.157.48.13
+;		IN      HINFO   "Decstation 5000" "Ultrix"
+;
+;kappa           IN      A       137.157.48.14
+;		IN      HINFO   "Decstation 5000" "Ultrix"
+;		IN      TXT     "MAC ADDR = 08:00:2b:1c:23:ab"
+;
+iansgamma       IN      A       137.157.48.20
+		IN      HINFO   "Decstation 5000" "Ultrix"
+;
+spare-48-9	IN	A	137.157.48.21
+;
+spare-48-10	IN	A	137.157.48.23
+spare-48-11	IN	A	137.157.48.24
+b53lsr2		IN	A	137.157.48.25
+		IN      HINFO   "HP Laser" " "
+spare-48-13	IN	A	137.157.48.26
+spare-48-14	IN	A	137.157.48.27
+spare-48-15	IN	A	137.157.48.28
+spare-48-16	IN	A	137.157.48.29
+b53lsr3		IN	A	137.157.48.30
+		IN	TXT	"HP Jetdrive - Margaret Edmondson Bld 22 Rm 32"
+spare-48-18	IN	A	137.157.48.31
+spare-48-19	IN	A	137.157.48.32
+spare-48-20	IN	A	137.157.48.33
+spare-48-21	IN	A	137.157.48.34
+spare-48-22	IN	A	137.157.48.35
+spare-48-23	IN	A	137.157.48.36
+spare-48-24	IN	A	137.157.48.37
+spare-48-25	IN	A	137.157.48.38
+spare-48-26	IN	A	137.157.48.39
+;
+anywhere	IN	A	137.157.48.40
+		IN	TXT	"Peter Ellis - Bld 53"
+;
+nowhere		IN	A	137.157.48.41
+		IN	HINFO	"PC" "Windows NT"
+		IN	TXT	"Peter Ellis Bld 53"
+;
+medusa		IN	A	137.157.48.42
+		IN	TXT	"Peter Ellis - Bld 53"
+;
+spare-48-1	IN	A	137.157.48.43
+;
+pdnt53		IN	A	137.157.48.44
+		IN	HINFO	"PC" "Windows NT Server"
+;pdnt53		IN	CNAME 	exchange2003.ansto.gov.au.
+pdnt53		IN 	MX 10 	exchange2003.ansto.gov.au.
+;
+pdsql1		IN	A	137.157.49.22
+		IN	TXT	"Imre Hirka - Physics NT server"
+		IN	HINFO	"PC" "Windows NT Server"
+;
+anpnt22		IN	A	137.157.49.3
+anpnt22-1	IN	CNAME	anpnt22
+;
+;
+spare-48-3	IN	A	137.157.107.180
+;
+;pdnt22		IN	A	137.157.60.172
+;www		IN	CNAME	pdnt22
+;
+spare-48-5	IN	A	137.157.48.47
+;
+;gizmo		IN	A	137.157.48.48
+;
+;lister		IN	A	137.157.48.49
+;
+;kryten		IN	A	137.157.48.50
+;
+;rimmer		IN	A	137.157.48.51
+;		IN	HINFO	"Dec Alpha" "??"
+;		IN	TXT	"Bld 53"
+;
+tek-ps		IN	A	137.157.48.52
+		IN	HINFO	"Tektronix Phaser Printer" "Print Server"
+		IN	TXT	"Bld 53"
+;
+b53daqlsr	IN	A	137.157.48.53
+		IN	HINFO	"Printer" "Print Server"
+		IN	TXT	"Bruce Whittaker - Bld 53"
+;
+;holly		IN	A	137.157.48.54
+;		IN	HINFO	"DEC Alpha" "Unix"
+;		IN	TXT	"Paul Tyler - Bld 53"
+;		
+sr2		IN	A	137.157.48.55
+		IN	TXT	"Crappy PC running NCSA Telnet - Bld 22 SR2"
+;
+imreserv	IN	A	137.157.48.56
+		IN	TXT	"Imre Hirka playing with servers"
+;
+pdrasserv	IN	A	137.157.78.249
+		IN	TXT	"Imre's Stallion modem server"
+;
+b15-netcam1	IN	A	137.157.74.182
+b15-netcam2	IN	A	137.157.74.183
+b15-netcam3	IN	A	137.157.74.184
+b15-netcam4	IN	A	137.157.74.185
+;
+b16-ras1	IN	A	137.157.78.21
+b16-ras2	IN	A	137.157.78.22
+b16-ras3	IN	A	137.157.78.23
+b16-ras4	IN	A	137.157.78.24
+b16-ras5	IN	A	137.157.78.25
+b16-ras6	IN	A	137.157.78.26
+b16-ras7	IN	A	137.157.78.27
+b16-ras8	IN	A	137.157.78.28
+;
+; Some tempprary stuff
+;
+tmp90-48	IN	A	137.157.48.90
+tmp91-48	IN	A	137.157.48.91
+tmp92-48	IN	A	137.157.48.92
+tmp93-48	IN	A	137.157.48.93
+tmp94-48	IN	A	137.157.48.94
+tmp95-48	IN	A	137.157.48.95
+tmp96-48	IN	A	137.157.48.96
+tmp97-48	IN	A	137.157.48.97
+tmp98-48	IN	A	137.157.48.98
+tmp99-48	IN	A	137.157.48.99
+tmp100-48	IN	A	137.157.48.100
+;
+;
+;
+rnslaptop	IN	A	137.157.49.1
+		IN	TXT	"Rainer Siegele - Bld 22 Rm 40"
+;
+anp2206zw	IN	A	137.157.49.2
+		IN	TXT	"Donna Lee Freeman - Bld 22 Rm 6"
+		IN	TXT	"MAC ADDR = 00:80:48:9d:eb:ea"
+;
+b22lsr1		IN	A	137.157.49.4
+		IN	TXT	"Printer Bld 22"
+;
+anp2250aw	IN	A	137.157.49.5
+		IN	TXT	"M Annette Gimsenius - Bld 22 Rm 50"
+		IN	TXT	"MAC ADDR = 00:00:01:08:35:63"
+;
+anp2255a	IN	A	137.157.49.6
+		IN	TXT	"Grahame Bailey - Bld 22 Rm 55"
+;
+anp2245w	IN	A	137.157.49.7
+		IN	TXT	"David Fink - Bld 22 Rm 45"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:93"
+;
+anp2252w	IN	A	137.157.49.8
+		IN	TXT	"Ewan Lawson - Bld 22 Rm 52"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:94"
+;
+anp2243w	IN	A	137.157.49.9
+		IN	TXT	"Andrew Smith - Bld 22 Rm 43"
+		IN	TXT	"MAC Addr = 00:00:b4:60:b4:6e"
+;
+anp2255w	IN	A	137.157.49.10
+		IN	TXT	"Graham Bailey - Bld 22 Rm 55"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:7a"
+;
+anp2240w	IN	A	137.157.49.11
+		IN	TXT	"Ramesh Kondepudi - Bld 22 Rm 40"
+		IN	TXT	"MAC ADDR = 00:00:01:07:70:93"
+;
+anp2244w	IN	A	137.157.49.12
+		IN	TXT	"Gerard Gadd - Bld 22 Rm 44"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:97"
+;
+anp2249w	IN	A	137.157.49.13
+		IN	TXT	"Peter Evans - Bld 22 Rm 49"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:7d"
+;
+anp2230w	IN	A	137.157.49.14
+		IN	TXT	"Roger Bird - Bld 22 Rm 30"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:9a"
+;
+anp2206bw	IN	A	137.157.49.15
+		IN	TXT	"Bruce Wallace - Bld 22 Rm 6"
+		IN	TXT	"MAC ADDR = 00:80:48:9e:59:b2"
+;
+anp2206cw	IN	A	137.157.49.16
+		IN	TXT	"Donna Freeman - Bld 22 Rm 6"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:9d"
+;
+anp2206aw	IN	A	137.157.49.17
+		IN	TXT	"Judy Smith - Bld 22 Rm 6"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:a3"
+;
+anp2246w	IN	A	137.157.49.18
+		IN	TXT	"Nick Dytlewski - Bld 22 Rm 46"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:ec"
+;
+laptop		IN	A	137.157.49.19
+		IN	TXT	"Vladimir Levchenko - Bld 22"
+;
+anp2254w	IN	A	137.157.49.20
+		IN	TXT	"Howard Linklater - Bld 22"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:72"
+;
+pd22ps1		IN	A	137.157.49.21
+		IN	TXT	"Imre Hirka / Peter Ellis - Bld 22"
+		IN	TXT	"MAC ADDR = 00:40:68:19:67:6e"
+;
+b22lgfmt1-ps	IN	A	137.157.49.23
+		IN	TXT	"Printer - Bld 22 - Slamen Bouchahine"
+;
+anp2235w	IN	A	137.157.49.24
+		IN	TXT	"Claudio Tuniz - Bld 22 Rm 35"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b4:78"
+;
+anp2239w	IN	A	137.157.49.25
+		IN	TXT	"David Cohen - Bld 22 Rm 39"
+		IN	TXT	"MAC ADDR = 00:80:48:9c:75:20"
+;
+anp2250w	IN	A	137.157.49.26
+		IN	TXT	"Rainer Siegele - Bld 22 Rm 50"
+		IN	TXT	"MAC ADDR = 00:00:b4:60:b7:ac"
+;
+anp2242w	IN	A	137.157.49.27
+		IN	TXT	"Michael Hotchkis - Bld 22 Rm 42"
+		IN	TXT	"MAC ADDR = 00:80:48:9c:70:94"
+;
+b22lsr2		IN	A	137.157.49.30
+		IN	TXT	"HP Jetdrive - Bld 22"
+;
+anp2229w	IN	A	137.157.49.31
+		IN	TXT	"Refaat El-Hajje - Bld 22 Rm 29"
+;
+;
+spare-49-1	IN	A	137.157.49.33
+spare-49-2	IN	A	137.157.49.34
+spare-49-3	IN	A	137.157.49.35
+spare-49-4	IN	A	137.157.49.36
+spare-49-5	IN	A	137.157.49.37
+spare-49-6	IN	A	137.157.49.38
+spare-49-7	IN	A	137.157.49.39
+;
+sigma		IN	A	137.157.49.40
+		IN      HINFO   "Dec5000" "Unix"
+;
+uprobe		IN	A	137.157.49.44
+		IN	HINFO	"PC" "PC"
+		IN	TXT	"Microprobe PC - Rainer Siegele"
+;
+anbf1           IN      A       137.157.78.7
+		IN      HINFO   "Decstation 4000" "Ultrix"
+		IN      TXT     "Richard Garrett 3967 (ANP)"
+;
+anbf5           IN      A       137.157.78.8
+		IN      HINFO   "PC" "Interactive Unix"
+		IN      TXT     "Richard Garrett ANP 3967"
+;
+anbf8		IN	A	137.157.78.6
+		IN	HINFO	"Decstation 5000/240" "Ultrix"
+		IN	TXT	"Richard Garrett - Bld 16 x3657"
+;
+ras0-anpnt22	IN	A	137.157.49.50
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras1-anpnt22	IN	A	137.157.49.51
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras2-anpnt22	IN	A	137.157.49.52
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras3-anpnt22	IN	A	137.157.49.53
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras4-anpnt22	IN	A	137.157.49.54
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras5-anpnt22	IN	A	137.157.49.55
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras6-anpnt22	IN	A	137.157.49.56
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+ras7-anpnt22	IN	A	137.157.49.57
+		IN	TXT	"Imre Hirka - dial in line on anpnt22"
+;
+;
+;
+;
+pdx166i		IN	A	137.157.75.131
+		IN	TXT	"Hifar - X166"
+;
+pdmrpdi		IN	A	137.157.75.132
+		IN	TXT	"Hifar - MRPD"
+;
+pdhrpdi		IN	A	137.157.75.133
+		IN	TXT	"Hifar - HRPD"
+;
+pdlngpli	IN	A	137.157.75.134
+		IN	TXT	"Hifar - LONGPOL"
+;
+pd2tanai	IN	A	137.157.75.135
+		IN	TXT	"Hifar - 2 TAN A"
+;
+pd2tanbi	IN	A	137.157.75.136
+		IN	TXT	"Hifar - 2 TAN B"
+;
+;
+;
+vlad		IN	A	137.157.78.9
+		IN	TXT	"Vladimir Levchenko - Bld 16"
+;
+anpnt16         IN      A       137.157.78.10
+		IN      HINFO   "PC" "MS/Dos"
+		IN      TXT     "Imre Hirke Bld 16 Nuclear Technology"
+;
+pd16ps1		IN	A	137.157.78.11
+		IN	TXT	"Bld 16 - Print server"
+;
+pd1644w         IN      A       137.157.78.12
+		IN      HINFO   "PC" "MS/DOS"
+		IN      TXT     "Kevin Varvell Bld 16"
+		IN      TXT     "MAC ADDR = 00:00:c0:60:47:5d"
+kev		IN	CNAME	pd1644w
+;
+b16-spare4	IN	A	137.157.78.14
+b16-spare5	IN	A	137.157.78.15
+b16-spare6	IN	A	137.157.78.16
+b16-spare7	IN	A	137.157.78.17
+b16-spare8	IN	A	137.157.78.18
+b16-spare9	IN	A	137.157.78.19
+;
+b16lsr3-ps	IN	A	137.157.78.31
+		IN	TXT	"laser printer"
+;
+b16lsr4-ps	IN	A	137.157.78.35
+		IN	TXT	"HP LaserJet 4240 - Andrew Davis"
+;
+;
+;
+;
+;
+;neutron         IN      A       137.157.106.1
+neutron         IN      A       137.157.126.150
+		IN      HINFO   "SGI O2" "Irix"
+neutron2        IN      A       137.157.126.151
+		IN      HINFO   "SGI Fuel" "Irix"
+anp5801w        IN      A       137.157.106.2
+		IN      HINFO   "PC" "MS/Dos"
+		IN      TXT     "Brett Hunter Bld 58 Nuclear Technology"
+		IN      TXT     "MAC ADDR = 00:00:b4:60:b4:66"
+;
+anp5802w        IN      A       137.157.106.3
+		IN      HINFO   "PC" "MS/DOS"
+		IN      TXT     "Chris Howard - Bld 58"
+;
+anp5803w        IN      A       137.157.106.4
+		IN      HINFO   "Clone PC" "MS/DOS"
+		IN      TXT     "Shane Kennedy - bld 58"
+;
+anp5804w	IN	A	137.157.106.5
+		IN	TXT	"Peter Baxter - Bld 58 room 4"
+;
+anp5805w        IN      A       137.157.106.6
+		IN      HINFO   "Clone PC" "MS/DOS"
+		IN      TXT     "Margaret Elcombe - bld 58"
+;
+anp5810aw       IN      A       137.157.106.7
+		IN      HINFO   "PC" "MS/DOS"
+		IN      TXT     "Visitor - bld 58"
+;
+anp5810bw	IN	A	137.157.106.8
+		IN	TXT	"MAC ADDR = 02:07:01:08:31:01"
+		IN	TXT	"Visitor"
+;
+anpnt58		IN	A	137.157.106.9
+		IN	HINFO	"PC clone" "Windows NT"
+		IN	TXT	"Imre Hirka Bld ??"
+;
+b58lsr1		IN	A	137.157.106.10
+		IN	TXT	"Printer"
+;
+anp5811w        IN      A       137.157.106.11
+		IN      HINFO   "PC" "MS/DOS"
+		IN      TXT     "R. Piltz - bld 58"
+;
+anp5812w	IN	A	137.157.106.12
+		IN	HINFO	"PC clone" "MS/DOS"
+		IN	TXT	"Visitor Bld 15"
+;
+anp5826w	IN	A	137.157.106.13
+		IN	TXT	"M Perry - Bld 58"
+;
+anp5821w	IN	A	137.157.106.14
+		IN	TXT	"M. James - Bld 58"
+;
+anp5822w	IN	A	137.157.106.15
+		IN	HINFO	"PC" "MS/DOS"
+		IN	TXT	"S Lane - Bld 58"
+;
+anp5823w        IN      A       137.157.106.16
+		IN      HINFO   "Clone PC" "MS/DOS"
+		IN      TXT     "Imre Hirka - bld 58"
+;
+anp5823aw       IN      A       137.157.106.17
+		IN      HINFO   "486 Notebook" "MS/DOS"
+		IN      TXT     "Imre Hirke Bld 58"
+;
+rbk		IN	A	137.157.106.19
+		IN	HINFO	"PC clone" "MS/DOS"
+		IN	TXT	"Robert Knott Bld 73"
+;
+b73lsr2		IN	A	137.157.106.23
+		IN	TXT	"Printer - Bld 73 (AUSANS)"
+;
+b58colour-ps	IN	A	137.157.106.24
+		IN	HINFO	"Colour LaserJet" "Print Server"
+		IN	TXT	"Bld 58"
+;
+maclaren	IN	A	137.157.238.161
+		IN	HINFO	"Pentium III 800" "Linux"
+		IN	TXT	"Bld 58"
+;
+b58xerox-mfp	IN	A	137.157.106.32
+		IN	HINFO	"Xerox MFP Test" "xerox"
+		IN	TXT	"Bld 58"
+;
+;quokka		IN	A	137.157.106.33
+;		IN	HINFO	"Pentium 4" "Linux"
+;		IN	TXT	"Bld 58 Nick Hauser"
+;
+;cherry          IN      A       137.157.58.225
+;cherry          IN      A       137.157.106.20
+;		IN      HINFO   "Sun Ultra 1 170" "Solaris"
+;
+marvin          IN      A       137.157.106.21
+		IN      HINFO   "Decstation 5000" "Ultrix"
+;
+;
+; ****************************************************************************
+; ****************************************************************************
+;
+;
+; ****************************************************************************
+; ****************************************************************************
