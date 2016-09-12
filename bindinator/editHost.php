@@ -30,7 +30,7 @@ if(isset($_GET['submit']) && isset($_GET['hostname'])) {
 	$toCheck = array("hostname", "zone", "cat", "ext", "txt", "username");
 	if(checkIfSet($toCheck)) {
 		if(validateAddData()) {
-			//Check that not editing to a exisiting host or IP.
+			// Check that not editing to a exisiting host or IP.
 			if(($_GET['hostname'] == $_GET['oldHostname']) || !$hRes = hostExists($db, $_GET['hostname'], $_GET['zone'])) {
 				if(($_GET['ip'] == $_GET['oldIp']) || !$iRes = ipInUse($db, $_GET['ip'])) {
 					modHost($db, true);
