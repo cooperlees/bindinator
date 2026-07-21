@@ -14,7 +14,7 @@ if($res->numRows() > 0) {
   </tr>
 <?
 		} else {
-			writeToLog("!--> ERROR: Unable to get FQDN for ".$row['zone'].". Host ".$row['hostnamename']." will not be in the reverse file printout.");
+			writeToLog("!--> ERROR: Unable to get FQDN for ".$row['zone'].". Host ".$row['hostname']." will not be in the reverse file printout.");
 		}
 	}
 } else {

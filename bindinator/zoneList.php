@@ -20,7 +20,7 @@ include('header.php');
       <p class="style3"><a name="top" id="top"></a><a href="index.php">Home</a> &gt; List Zone</p>
       <p class="style1">List Zone</p>
 <?
-if(isset($_GET['submit']) && $_GET['submit'] == "Print Foreward Zone") {
+if(isset($_GET['submit']) && $_GET['submit'] == "Print Forward Zone") {
 	// Maybe add check valid Zone ?
 	if(isset($_GET['zone']) && validZone($db, $_GET['zone'])) {
 		$hQuery = "SELECT * FROM A_RECORDS WHERE zone = '".$_GET['zone']."' ORDER BY hostname";
@@ -79,7 +79,7 @@ else if(isset($_GET['submit']) && $_GET['submit'] == "Print Reverse Zone") {
       <form id="fZoneList" name="fZoneList" method="get" action="<? echo $_SERVER['PHP_SELF']; ?>">
       <table width="90%" border="0">
         <tr>
-          <td colspan="2" bgcolor="#CCCCCC"><div align="center" class="style1">Foreward Zone to Output:</div></td>
+          <td colspan="2" bgcolor="#CCCCCC"><div align="center" class="style1">Forward Zone to Output:</div></td>
           </tr>
         <tr>
           <td width="50%">Zone</td>
@@ -89,7 +89,7 @@ else if(isset($_GET['submit']) && $_GET['submit'] == "Print Reverse Zone") {
         </tr>
         <tr>
           <td colspan="2"><div align="center">
-              <input type="submit" name="submit" id="submit" value="Print Foreward Zone" />
+              <input type="submit" name="submit" id="submit" value="Print Forward Zone" />
               <input type="reset" name="reset" id="reset" value="Reset" />
             </div></td>
           </tr>

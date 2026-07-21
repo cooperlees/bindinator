@@ -1,5 +1,5 @@
 <?
-# Used for linking to similiar files relitavely
+# Used for linking to similar files relatively
 $BASE="..";
 # Include General Functions
 include('../utilities/functions.php');

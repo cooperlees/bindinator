@@ -2,7 +2,7 @@
 
 ####################################
 # Cooper Lees - me@cooperlees.com
-# Purpose: Shell script to co-ordinate
+# Purpose: Shell script to coordinate
 # the updating of BIND DNS Zone File
 # Designed to be used with CRON
 # Last Updated: 20080423
@@ -26,7 +26,7 @@ PATH=$PATH:/usr/sbin:/usr/local/sbin
 VERBOSE=1
 DNSSERVER=""
 
-## GENERATE FOREWARD ZONES IF REQUIRED ##
+## GENERATE FORWARD ZONES IF REQUIRED ##
 # Generate all Internal Zone file that have changed
 if [ $VERBOSE -eq 0 ]; then
 	php ${BASE}/genZoneFiles.php
@@ -43,7 +43,7 @@ else
 fi
 errorCheck "!--> [updateDNS]: Error generating External Zone Files"
 
-# Check if there are files in (foreward) zones dir - if there is generate and update DNS
+# Check if there are files in (forward) zones dir - if there is generate and update DNS
 ls ${OUTPUTDIR}/zones/*.zone > /dev/null 2>&1
 if [ $? -eq 0 ]; then
 	# Generate Reverse Files Always - Need a way to check for updates of forward zones - Return Code ?
@@ -94,7 +94,7 @@ if [ $? -eq 0 ]; then
 #	rm -vrf ${OUTPUTDIR}/revzones/*.zone
 else 
 	if [ $VERBOSE -ne 0 ]; then
-		msg="--> No foreward zone files - No updates."
+		msg="--> No forward zone files - No updates."
 		echo "${msg}"
 		echo $msg | logger
 	fi

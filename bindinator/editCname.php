@@ -27,7 +27,7 @@ function printLinks() {
 }
 
 if(isset($_GET['submit']) && isset($_GET['cname'])) {
-	# Array of elements to check if set - Manditory
+	# Array of elements to check if set - Mandatory
 	$toCheck = array("cname", "hostname", "zone", "ext", "username");
 	if(checkIfSet($toCheck)) {
 		# Check if hostname in a different Zone and make sure FQDN
@@ -54,7 +54,7 @@ else if(isset($_GET['cnameToEdit']) && isset($_GET['zone'])) {
 		if($cRes = getRes($db, $query)) {
 			$cRow = $cRes->fetchRow(MDB2_FETCHMODE_ASSOC);
 ?>
-      <p>Please complete the form below to edit exisiting CNAME Record.<br />
+      <p>Please complete the form below to edit existing CNAME Record.<br />
       </p>
       <form id="editHost" name="editHost" method="get" action="<? echo $_SERVER['PHP_SELF']; ?>">
       <input name="cname" type="hidden" value="<? echo $cRow['cname']; ?>" />

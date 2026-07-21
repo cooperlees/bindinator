@@ -25,8 +25,8 @@ if(isset($_GET['name'])) {
 		$query = "INSERT INTO CATEGORIES (name) VALUES
 		('".$_GET['name']."')";
 		# ADD To DB
-		if($addected = insertSet($db, $query)) {
-			# Auto Generate Cate Header -> In future ...
+		if($affected = insertSet($db, $query)) {
+			# Auto Generate Category Header -> In future ...
 			$msg = "Added Category ".$_GET['name']." - user ".$_SERVER['PHP_AUTH_USER'];
 			echo "<p align=\"center\">$msg</p>\n";
 			echo "<p align=\"center\">Please create a category header file in the utilities/catHeaders folder. File must be called ".$_GET['name'].".txt</p>\n";
@@ -47,7 +47,7 @@ if(isset($_GET['name'])) {
       <table width="90%" border="0">
         <tr>
           <td colspan="2" bgcolor="#CCCCCC"><div align="center"><span class="style1">Add DNS Zone<br />
-          </span><span class="style3">This will add a new category that systems can be classified for the dyncamically generated zone files</span></div></td>
+          </span><span class="style3">This will add a new category that systems can be classified for the dynamically generated zone files</span></div></td>
           </tr>
         <tr>
           <td width="50%">Category Name:<br />

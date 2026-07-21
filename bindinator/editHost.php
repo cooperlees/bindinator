@@ -53,7 +53,7 @@ else if(isset($_GET['hostToEdit']) && isset($_GET['zone'])) {
 		if($hRes = getRes($db, $query)) {
 			$hRow = $hRes->fetchRow(MDB2_FETCHMODE_ASSOC);
 ?>
-      <p>Please complete the form below to edit exisiting A Record.<br />
+      <p>Please complete the form below to edit existing A Record.<br />
       </p>
       <form id="editHost" name="editHost" method="get" action="<? echo $_SERVER['PHP_SELF']; ?>">
       <input type="hidden" name="oldHostname" value="<? echo $hRow['hostname']; ?>" />

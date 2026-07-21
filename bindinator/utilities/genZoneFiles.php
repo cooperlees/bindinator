@@ -130,7 +130,7 @@ function writeArec($f, $row) {
 		}
 	}
 	writeHostCnames($f, $row['hostname']);
-	// Seperate Hosts with ;
+	// Separate Hosts with ;
 	fwrite($f, ";\n");
 }
 
@@ -182,7 +182,7 @@ function genQuery($zone, $category) {
 function genZoneFiles() {
 	global $db, $EXT, $tDir, $VERBOSE;
 
-	# Load iterator implmentations
+	# Load iterator implementations
 	MDB2::loadFile('Iterator');
 
 	# Queries for Required Data from DB
@@ -191,7 +191,7 @@ function genZoneFiles() {
 	# Get all CATEGORIES for Zone File Organisation
 	$catQuery = "SELECT * FROM CATEGORIES ORDER BY name";
 	
-	# Get Query Iteratable Results
+	# Get Query Iterable Results
 	$zRes = getResSet($db, $zNameQuery);
 	$cRes = getResSet($db, $catQuery);
 
@@ -266,7 +266,7 @@ function writeRevZone($db, $CLASS, $NET, $f) {
 	fwrite($f, "; Reverse file for $NET\n");
 	fwrite($f, "; - Fixed addresses only - DHCP addresses included from another file\n");
 
-	# Interate for all Class C Address Ranges
+	# Iterate for all Class C Address Ranges
 	for($i = $start; $i < $end; $i++) {
 		fwrite($f, ";\n");
 		fwrite($f, "; Network Range ".$net[0].".".$net[1].".$i.0/$sMask\n");
@@ -340,7 +340,7 @@ function printHelp() {
 Usage: php genZoneFiles.php -[d:r:ehvV]
 	-d = OPTIONAL output directory. Default = '/var/bindinator'
 	-e = Generate External View Files
-	-r = Generate Reverse File for suplied subnet
+	-r = Generate Reverse File for supplied subnet
 	-h = Help (this output)
 	-v = Verbose Mode (more verbose output)
 	-V = Print Version\n");
@@ -408,7 +408,7 @@ if($db = connectDB()) {
 
 /* Exit Codes:
 1 = General DB Connection issue
-2 = Problem Generating Foreward Files
+2 = Problem Generating Forward Files
 3 = Problem Generating Reverse File
 4 = No valid reverse zone specified
 5 = Reverse Zone IP Class Not Specified

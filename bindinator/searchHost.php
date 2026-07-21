@@ -39,7 +39,7 @@ if(isset($_GET['hostname'])) {
 			echo "<p align=\"center\">Problem obtaining that hostname ".$_GET['hostname']."</p>";
 		}
 		if ($resCount < 1 && $res) {
-			echo "<p align=\"center\">Sorry your serach of ".$_GET['hostname']." returned 0 entries.</p>";
+			echo "<p align=\"center\">Sorry your search of ".$_GET['hostname']." returned 0 entries.</p>";
 		}
 	} else {
 		echo "<p align=\"center\">You did not specify a valid hostname.</p>";

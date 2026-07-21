@@ -37,7 +37,7 @@ function disconnectDB($aMdb2) {
 }
 
 # Select Statement Function
-# Return a Iteratable result set
+# Return an Iterable result set
 function getResSet($db, $query) {
 	MDB2::loadFile('Iterator');
 	$res = $db->query($query, true, true, 'MDB2_BufferedIterator');
@@ -93,12 +93,12 @@ function cnameExists($db, $cname, $zone, $verbose=false) {
 	AND zone = '$zone'";
 	$res = $db->query($query);
 	if(PEAR::isError($res)) {
-		handleError("cnametExists", $res, $verbose);
+		handleError("cnameExists", $res, $verbose);
 		return false;
 	} else if($res->numRows() == 1) {
 		return $res;
 	}
-	return false; // e.g. if 2 rows returned - Someting weird if get here
+	return false; // e.g. if 2 rows returned - Something weird if get here
 }
 # Delete a Cname from a Zone
 function delCname($db, $cname, $zone) {
@@ -164,7 +164,7 @@ function isFQDN($host) {
 	return 0;
 }
 
-# Generic Handiling of Error - One place to update for all functions
+# Generic Handling of Error - One place to update for all functions
 function handleError($func, $res, $verbose=false) {
 	if($verbose) { fwrite(STDERR, $res->getMessage()."\n"); }
 	writeToLog("!--> ERROR: In $func - ".$res->getMessage(), true);
@@ -200,7 +200,7 @@ function ipError($res) {
 	printLinks();
 }
 
-# Check if the IP alreday exists in DB
+# Check if the IP already exists in DB
 function ipInUse($db, $ip, $verbose=false) {
 	$query = "SELECT * from A_RECORDS WHERE ip = '$ip'";
 	$res = $db->query($query);
@@ -210,7 +210,7 @@ function ipInUse($db, $ip, $verbose=false) {
 	} else if($res->numRows() == 1) {
 		return $res;
 	}
-	return false; // e.g. if 2 rows returned - Someting weird if get here
+	return false; // e.g. if 2 rows returned - Something weird if get here
 }
 
 # Function to add or update cname
@@ -461,7 +461,7 @@ function validCategory($db, $cat, $verbose=false) {
 	} else if($res->numRows() == 1) {
 		return true;
 	}
-	return false; // e.g. if 2 rows returned - Someting weird if get here
+	return false; // e.g. if 2 rows returned - Something weird if get here
 }
 
 # Check if valid Int for EXTERNAL field
@@ -518,7 +518,7 @@ function validZone($db, $zoneName, $verbose=false) {
 	} else if($res->numRows() == 1) {
 		return true;
 	}
-	return false; // e.g. if 2 rows returned - Someting weird if get here
+	return false; // e.g. if 2 rows returned - Something weird if get here
 }
 
 # Write a line out to syslog

@@ -27,7 +27,7 @@ function cleanOutTables($db, $zName) {
 
 	# Delete CNAMES
 	if($affected = insertSet($db, $cQuery)) {
-		$msg = "--> Sucessfully cleaned out zone $zName entries from the CNAME table";
+		$msg = "--> Successfully cleaned out zone $zName entries from the CNAME table";
 		echo "<p align=\"center\">$msg</p>\n";
 		writeToLog($msg);
 	} else {
@@ -37,7 +37,7 @@ function cleanOutTables($db, $zName) {
 	}
 	# Delete A_RECS
 	if($affected = insertSet($db, $hQuery)) {
-		$msg = "--> Sucessfully cleaned out zone $zName entries from the A_RECORDS table";
+		$msg = "--> Successfully cleaned out zone $zName entries from the A_RECORDS table";
 		echo "<p align=\"center\">$msg</p>\n";
 		writeToLog($msg);
 	} else {

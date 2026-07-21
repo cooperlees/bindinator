@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 # A little script to increment the SOA serial number in our DNS Zone files.
-# relies on the SOA serial number appearin on a line formatted as:
+# relies on the SOA serial number appearing on a line formatted as:
 #
 #    (white space)yyyymmddcc(white space);serial - date and time used by me
 #
@@ -93,7 +93,7 @@ if (link($dnsfile,$dnssave))
 	# that failed, so recover and get out
 	unlink($dnssave);
 	unlink($dnstmp);
-	die "Error: Cannont update dns zone file: $dnsfile. (Permissions ??)\n";
+	die "Error: Cannot update dns zone file: $dnsfile. (Permissions ??)\n";
 	};
     # original removed, now link in new
     if (!link($dnstmp,$dnsfile))
@@ -104,7 +104,7 @@ if (link($dnsfile,$dnssave))
 	link($dnssave,$dnsfile) || do
 	   {
            # that failed too, tell user and get out
-	   die "Error: Cannont update dns zone file: $dnsfile. (Permissions ??)\n" .
+	   die "Error: Cannot update dns zone file: $dnsfile. (Permissions ??)\n" .
 	       "       Original has also gone, backup at $dnssave\n";
 	   };
 	}
@@ -117,10 +117,10 @@ if (link($dnsfile,$dnssave))
 else
     {
     unlink($dnstmp);
-    die "Error: Cannont update dns zone file: $dnsfile. (Permissions ??)\n";
+    die "Error: Cannot update dns zone file: $dnsfile. (Permissions ??)\n";
     }
 
-# All over red rover, remve the lock
+# All over red rover, remove the lock
 
 close(LOCK);
 unlink $GENTBLS::Cleanfile  if defined $GENTBLS::Cleanfile;
@@ -165,7 +165,7 @@ sub lockit
 		{
 		unlink $templock;
 		die "ERROR: Can't create lockfile ($lockfile).\n".
-		    "Permission problem or another gen_tables locking succesfully?\n"
+		    "Permission problem or another gen_tables locking successfully?\n"
 		};
 	    }
 	else

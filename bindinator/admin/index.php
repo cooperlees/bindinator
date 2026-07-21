@@ -36,7 +36,7 @@ function doSystemCall ($cmd, $err, $msg) {
 if(isset($_POST['updateNow'])) {
 	$updateFileCmd = 'cd ../utilities/; ./updateDNS.bash';
 	$err = "!--> ERROR: Problem updating DNS.";
-	$msg="--> User ".$_SERVER['PHP_AUTH_USER']." sucessfully updated DNS.";
+	$msg="--> User ".$_SERVER['PHP_AUTH_USER']." successfully updated DNS.";
 	doSystemCall($updateFileCmd, $err, $msg);
 } 
 else {

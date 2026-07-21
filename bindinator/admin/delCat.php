@@ -6,7 +6,7 @@ include('header.php');
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Bindinator - Delete DNS Zone</title>
+<title>Bindinator - Delete Category</title>
 <link href="../bindinator.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -61,7 +61,7 @@ if(isset($_GET['cat'])) {
 			}
 		}
 	} else { 
-		$err = "!--> ERROR: Prob getting name of category with id ".$_GET['zone']; 
+		$err = "!--> ERROR: Prob getting name of category with id ".$_GET['cat']; 
 		echo "<p align=\"center\">$err</p>\n";
 		writeToLog($err);
 	}
@@ -70,7 +70,7 @@ if(isset($_GET['cat'])) {
       <form name="delCat" id="delCat" action="<? echo $_SERVER['PHP_SELF']; ?>" method="get">
       <table width="90%" border="0">
         <tr>
-          <td colspan="2" bgcolor="#CCCCCC"><div align="center" class="style1">Delete Zone<br />
+          <td colspan="2" bgcolor="#CCCCCC"><div align="center" class="style1">Delete Category<br />
             <span class="style3">This form will remove a category as long as there are no hosts still in this category.</span></div></td>
           </tr>
         <tr>
