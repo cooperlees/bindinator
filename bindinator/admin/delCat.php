@@ -50,7 +50,7 @@ if(isset($_GET['cat'])) {
 		$name = $nRow['name'];
 		# Check if Hosts still exist in Category
 		if(!checkForHosts($db, $name)) {
-			if($affected = insertSet($db, $query)) {
+			if(insertSet($db, $query)) {
 				$msg = "--> Deleted category $name by ".$_SERVER['PHP_AUTH_USER'];
 				echo "<p align=\"center\">$msg</p>\n";
 				writeToLog($msg);

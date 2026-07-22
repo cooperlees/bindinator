@@ -42,7 +42,7 @@ if(isset($_GET['name']) && isset($_GET['fqname'])) {
 					".$_GET['rev'].")";
 				}
 				# ADD To DB
-				if($affected = insertSet($db, $query)) {
+				if(insertSet($db, $query)) {
 					// Copy generic template and mod ? - Later version
 					$msg = "Added DNS Zone ".$_GET['fqname']." with name ".$_GET['name']." by user ".$_SERVER['PHP_AUTH_USER'];
 					echo "<p align=\"center\">$msg</p>\n";

@@ -25,7 +25,7 @@ if(isset($_GET['name'])) {
 		$query = "INSERT INTO CATEGORIES (name) VALUES
 		('".$_GET['name']."')";
 		# ADD To DB
-		if($affected = insertSet($db, $query)) {
+		if(insertSet($db, $query)) {
 			# Auto Generate Category Header -> In future ...
 			$msg = "Added Category ".$_GET['name']." - user ".$_SERVER['PHP_AUTH_USER'];
 			echo "<p align=\"center\">$msg</p>\n";
