@@ -26,8 +26,8 @@ function cleanOutTables($db, $zName) {
 	$cQuery = "DELETE FROM CNAMES WHERE zone = '$zName'";
 
 	# Delete CNAMES
-	if($affected = insertSet($db, $cQuery)) {
-		$msg = "--> Sucessfully cleaned out zone $zName entries from the CNAME table";
+	if(insertSet($db, $cQuery)) {
+		$msg = "--> Successfully cleaned out zone $zName entries from the CNAME table";
 		echo "<p align=\"center\">$msg</p>\n";
 		writeToLog($msg);
 	} else {
@@ -36,8 +36,8 @@ function cleanOutTables($db, $zName) {
 		writeToLog($err);
 	}
 	# Delete A_RECS
-	if($affected = insertSet($db, $hQuery)) {
-		$msg = "--> Sucessfully cleaned out zone $zName entries from the A_RECORDS table";
+	if(insertSet($db, $hQuery)) {
+		$msg = "--> Successfully cleaned out zone $zName entries from the A_RECORDS table";
 		echo "<p align=\"center\">$msg</p>\n";
 		writeToLog($msg);
 	} else {
@@ -55,7 +55,7 @@ if(isset($_GET['zone'])) {
 	if($nRes = getRes($db, $sQuery)) {
 		$nRow = $nRes->fetchRow(MDB2_FETCHMODE_ASSOC);
 		$name = $nRow['name'];
-		if($affected = insertSet($db, $query)) {
+		if(insertSet($db, $query)) {
 			$msg = "--> Deleted zone $name by ".$_SERVER['PHP_AUTH_USER'];
 			echo "<p align=\"center\">$msg</p>\n";
 			writeToLog($msg);

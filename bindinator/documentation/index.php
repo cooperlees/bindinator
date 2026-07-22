@@ -97,7 +97,7 @@
           <td align="center" valign="middle" bgcolor="#CCCCCC" class="style1"><a name="intro" id="intro"></a>1.0 Introduction</td>
           </tr>
         <tr>
-          <td align="left" valign="top"><p>Bindinator is a <a href="http://php.net/" target="_blank">PHP</a> / <a href="http://mysql.com/" target="_blank">MYSQL</a> Web front end for the <a href="http://www.isc.org/products/BIND/" target="_blank">Berkely Internet Naming Deamon</a> (<a href="http://www.isc.org/products/BIND/">BIND</a>).  Bindinator generates forward and reverse BIND Zone files. It allows easy management of &quot;Internal&quot; and &quot;External&quot; BIND DNS Views through a simplified web front end for a less technical DNS administrator. Bndinator generates two files per zone, one for the internal and a less informative external zone file. Bindinator allows categorisation and organises zone files so even to a human they are more readable than hand hacked BIND zone files.</p>
+          <td align="left" valign="top"><p>Bindinator is a <a href="http://php.net/" target="_blank">PHP</a> / <a href="http://mysql.com/" target="_blank">MYSQL</a> Web front end for the <a href="http://www.isc.org/products/BIND/" target="_blank">Berkeley Internet Name Domain</a> (<a href="http://www.isc.org/products/BIND/">BIND</a>).  Bindinator generates forward and reverse BIND Zone files. It allows easy management of &quot;Internal&quot; and &quot;External&quot; BIND DNS Views through a simplified web front end for a less technical DNS administrator. Bindinator generates two files per zone, one for the internal and a less informative external zone file. Bindinator allows categorisation and organises zone files so even to a human they are more readable than hand hacked BIND zone files.</p>
             <p>This project is the only one that generates organised zone files from a database driven datastore. It allows tighter management and an audit trail (via sysloging) and a 1 area solution for a definitive store of your DNS information. With more key information being stored in the database, this allows for multiple view files to be built and kept 'in sync' and both up to date, clean and organised.</p></td>
           </tr>
         <tr>
@@ -134,10 +134,10 @@
         </tr>
         <tr>
           <td align="left" valign="middle"><p align="left">There are a few terms used to describe elements of Bindinator. They will be defined here to reduce any ambiguity.</p>
-            <p align="left"><strong>Category Header Templates/Files</strong> - Bindinator has template files for each category defined. This is what is appended to the Zone file to destinguish each category. This <em><strong>MUST</strong></em> be a valid BIND commented out area of text.</p>
+            <p align="left"><strong>Category Header Templates/Files</strong> - Bindinator has template files for each category defined. This is what is appended to the Zone file to distinguish each category. This <em><strong>MUST</strong></em> be a valid BIND commented out area of text.</p>
             <p align="left"><a href="http://bind-users.info/" target="_blank">Common DNS Terms</a> - Refer to 3rd party site. These terms are handy to understand when working with BIND.</p>
-            <p align="left"><strong>RNDC</strong> - Name Server control utility. This superseeds the ndc utility of older BIND servers. (man rndc)</p>
-            <p align="left"><strong>Zone Template</strong> - The files used to add hand edited content. Certain things are required in the 'template' such as SOA (Star of Authoriaty), MX records etc. to make a valid working DNS zone file. Bindinator will not work without a valid template for each zone managed by Bindinator.</p></td>
+            <p align="left"><strong>RNDC</strong> - Name Server control utility. This supersedes the ndc utility of older BIND servers. (man rndc)</p>
+            <p align="left"><strong>Zone Template</strong> - The files used to add hand edited content. Certain things are required in the 'template' such as SOA (Start of Authority), MX records etc. to make a valid working DNS zone file. Bindinator will not work without a valid template for each zone managed by Bindinator.</p></td>
         </tr>
         <tr>
           <td align="left" valign="middle" bgcolor="#CCCCCC"><strong><a name="dbinfo" id="dbinfo"></a>2.2 Database Information</strong></td>

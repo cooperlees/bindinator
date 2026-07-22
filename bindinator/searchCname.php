@@ -61,7 +61,7 @@ if(isset($_GET['hostname']) || isset($_GET['cname'])) {
 			echo "<p align=\"center\">Problem obtaining the cname $name</p>";
 		}
 		if ($resCount < 1 && $res) {
-			echo "<p align=\"center\">Sorry your serach of $name returned 0 entries.</p>";
+			echo "<p align=\"center\">Sorry your search of $name returned 0 entries.</p>";
 		}
 	} else {
 		echo "<p align=\"center\">You did not specify a valid cname.</p>";

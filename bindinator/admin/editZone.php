@@ -45,7 +45,7 @@ if(isset($_GET['name']) && isset($_GET['fqname']) && isset($_GET['id'])) {
 			}
 			if(!$qErr) {
 				# ADD To DB
-				if($addected = insertSet($db, $query)) {
+				if(insertSet($db, $query)) {
 					$msg = "Edited DNS Zone ".$_GET['fqname']." with name ".$_GET['name']." by user ".$_SERVER['PHP_AUTH_USER'];
 					echo "<p align=\"center\">$msg</p>\n";
 					echo "<p align=\"center\">Please ensure templates are updated for this zone.</p>\n";

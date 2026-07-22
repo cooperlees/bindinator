@@ -27,7 +27,7 @@ function printLinks() {
 }
 
 if(isset($_GET['submit'])) {
-	# Array of elements to check if set - Manditory
+	# Array of elements to check if set - Mandatory
 	$toCheck = array("hostname", "ip", "zone", "cat", "ext", "txt", "username");
 	if(checkIfSet($toCheck)) {
 		# Validate Data - Validates Superglobal Get Array
@@ -49,7 +49,7 @@ if(isset($_GET['submit'])) {
 } else {
 ?>
       <p>Please complete the form below to add a new A Record.<br />
-        Please ensure that the IP you are using is avaliable. This system does not support multiple A records per IP.</p>
+        Please ensure that the IP you are using is available. This system does not support multiple A records per IP.</p>
       <form id="addHost" name="addHost" method="get" action="<? echo $_SERVER['PHP_SELF']; ?>">
       <table width="90%" border="0">
         <tr bgcolor="#CCCCCC">

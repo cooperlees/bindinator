@@ -19,7 +19,7 @@ include('header.php');
     <td><div align="center">
       <p class="style3"><a name="top" id="top"></a><a href="index.php">Home</a> &gt; Zone Stats</p>
       <p class="style1">Zone Statistics</p>
-      <p>This page will echo statistics on each zone. Very large posibilities here. Will do last. Will leave basic for now.</p>
+      <p>This page will echo statistics on each zone. Very large possibilities here. Will do last. Will leave basic for now.</p>
 <?
 # Function to generate Standard Stats
 function genZoneStats($zone) {

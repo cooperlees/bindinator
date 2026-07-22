@@ -111,7 +111,7 @@ function setUpTables() {
 		) ENGINE=InnoDB DEFAULT CHARSET=ascii COMMENT='Tables of Zones that are Dynamically Generated' AUTO_INCREMENT=0 ;";
 		insertSet($db, $zQuery);
 
-		echo "--> Database Tables Created. Please reduce the database users privledges.\n";
+		echo "--> Database Tables Created. Please reduce the database users privileges.\n";
 	} else {
 		echo "!--> ERROR: Unable to connect to your Database.\n";
 		return false;
@@ -148,7 +148,7 @@ echo "
 - Cooper Lees - me@cooperlees.com
 
 This program will ask you a series of questions and then go off and create:
-- Bindiator Web Dir
+- Bindinator Web Dir
 - Bindinator Data Dir (/var/bindinator default)
 - Database Tables 
 	- The DB User will need to be able to create tables to start with!
@@ -159,7 +159,7 @@ Please enter the data for the following:
 
 ";
 
-# Data Aquisition
+# Data Acquisition
 # Web Dir
 echo "Web Dir [Full Path Please] (Default = $WEBDIR): ";
 fscanf(STDIN, "%s\n", $wdInput);
@@ -188,7 +188,7 @@ fscanf(STDIN, "%s\n", $apInput);
 if(ereg("^[[:alpha:]]{1,40}", $apInput)) {
 	$APACHE_USER=strtolower($apInput);
 } else if($apInput != "") {
-	echo "!--> Invalid Apache User - Continuting with default: $APACHE_USER\n";
+	echo "!--> Invalid Apache User - Continuing with default: $APACHE_USER\n";
 }
 
 ### Do The Install ###
@@ -246,13 +246,13 @@ fscanf(STDIN, "%s\n", $dbInput);
 if(ereg("^[[:alpha:]]{1,40}", $dbInput)) {
 	$DB_USER=strtolower($dbInput);
 } else if($dbInput != "") {
-	echo "!--> Invalid DB Username - Continuting with default: $DB_USER\n";
+	echo "!--> Invalid DB Username - Continuing with default: $DB_USER\n";
 }
 # Get DB Password to allow only enter once
 echo "DB Password (please clear your shell history after install): ";
 fscanf(STDIN, "%s\n", $DB_PASS);
 if(strlen($DB_PASS) > 50) {
-	echo "--> DB password suspeciously long ...\n";
+	echo "--> DB password suspiciously long ...\n";
 }
 # Get DB Type from 
 echo "DB Type (mysql, oracle or postgres): ";
@@ -299,7 +299,7 @@ if(!setUpTables()) {
 }
 echo "--> Database Setup complete. Please check categories and zones from Admin Web Interface.\n";
 
-# Echo completion Ouput - User must configure Apache
+# Echo completion Output - User must configure Apache
 echo "
 --> Bindinator Setup Complete:
 	- Webfiles located:	$WEBDIR
@@ -312,7 +312,7 @@ echo "
 
 --> You will be required to configure apache. A form of basic auth (e.g. Flat File or LDAP) must be applied to $WEBDIR.
 ---> Check the utilities/conf folder for an example config.
-!--> *Remember* each zone you add requires and internal and external zone template
+!--> *Remember* each zone you add requires an internal and external zone template
 
 -----------------------------------
 Enjoy Using Bindinator,

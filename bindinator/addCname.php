@@ -27,7 +27,7 @@ function printLinks() {
 }
 
 if(isset($_GET['submit'])) {
-	# Array of elements to check if set - Manditory
+	# Array of elements to check if set - Mandatory
 	$toCheck = array("cname", "hostname", "zone", "ext", "username");
 	if(checkIfSet($toCheck)) {
 		# Check if hostname in a different Zone and make sure FQDN
